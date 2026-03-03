@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ItemsActivity extends AppCompatActivity {
 
+    public static final String ITEM = "ITEM";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class ItemsActivity extends AppCompatActivity {
     public void handleAddItem(View view) {
         Intent resultIntent = new Intent();
         String value = ((Button) view).getText().toString();
-        resultIntent.putExtra("ITEM", value);
+        resultIntent.putExtra(ITEM, value);
         setResult(RESULT_OK, resultIntent);
         finish();
     }
