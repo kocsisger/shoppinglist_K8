@@ -11,6 +11,7 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         itemsTextView = findViewById(R.id.itemsTextView);
+        if (savedInstanceState!=null)
+            itemsTextView.setText(savedInstanceState.getString("TEXTVIEW_CONTENTS"));
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("TEXTVIEW_CONTENTS", itemsTextView.getText().toString());
     }
 
     public void handleAddButtonPressed(View view) {
