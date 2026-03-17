@@ -25,15 +25,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleAddItem"
-            android:text="Apple"
+            android:text="@string/apple"
             android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleAddItem"
-            android:text="Banana"
+            android:text="@string/banana"
             android:textSize="24sp" />
 
         <Button
@@ -41,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleAddItem"
-            android:text="Candy"
+            android:text="@string/candy"
             android:textSize="24sp" />
 
         <Button
@@ -49,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleAddItem"
-            android:text="Donuts"
+            android:text="@string/donuts"
             android:textSize="24sp" />
 
         <Button
@@ -57,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="handleAddItem"
-            android:text="Pálinka"
+            android:text="@string/p_linka"
             android:textSize="24sp" />
 
     </LinearLayout>

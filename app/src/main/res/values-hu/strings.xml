@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="empty_list">nincs elem a listán</string>
+    <string name="apple">Alma</string>
+    <string name="red">Piros</string>
+    <string name="green">Zöld</string>
+    <string name="color">"Szín: "</string>
+    <string name="banana">Banán</string>
+    <string name="candy">Cukora</string>
+    <string name="donuts">Fánk</string>
+    <string name="add">Új...</string>
+    <string name="clear">Töröl</string>
+</resources>
